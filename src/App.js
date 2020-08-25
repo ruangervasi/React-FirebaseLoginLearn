@@ -78,7 +78,7 @@ class App extends Component {
                         Entrar
                     </button>
                     </form>
-                    <button onClick={(e) => { this.setState({ logar: 0 }); this.sair()}}>Cadastrar</button>
+                    <button onClick={(e) => { this.setState({ logar: 0 }); this.sair()}}>Não possui cadastro? Cadastre-se</button>
                 </div>                
                 :
                 <div>
@@ -94,7 +94,7 @@ class App extends Component {
                             Cadastrar
                         </button>
                     </form> 
-                    <button onClick={(e) => { this.setState({ logar: 1 })}}>Logar</button>
+                    <button onClick={(e) => { this.setState({ logar: 1 })}}>Já tem conta? Fazer login</button>
                 </div>
                 }
             {this.state.logado === 1 ? <button onClick={this.sair}>Sair</button>:null }
